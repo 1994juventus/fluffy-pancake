@@ -12,7 +12,7 @@ my $weight=10;
 
 my $impression_cutoff=1000;
 
-my @media=qw(vtq wax);
+my @media=qw(vtq wax bitauto);
 
 my %winhash=();
 
@@ -63,7 +63,7 @@ foreach $key (keys %winhash)
     {
 	$ctr=$click/$win;
     }
-    printf"%-20s,%10d,%8d,%8d,%15.8f\n",$key,$win,$click,$weight,$ctr;
+    printf"%-70s,%10d,%8d,%8d,%15.8f\n",$key,$win,$click,$weight,$ctr;
 }
 close(INPUT)            || die "can't close $file: $!";
 }

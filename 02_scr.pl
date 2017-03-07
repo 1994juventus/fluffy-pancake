@@ -52,7 +52,7 @@ foreach $key (keys %denominatorhash)
     my $final_score=int((2/(1+exp(-$scaling_coeff*$score))-1)*$range_coeff+$round_coeff);
     for (my $i=0;$i<=$max_hour;$i++)
     {
-	printf "%-2d,%10s,%3d,%15d,%15d,%10d\n",$i,$media_name,$city_tier_dummy,$pid,$material_id,$final_score;
+	printf "%-2d,%10s,%3d,%50s,%10s,%10d\n",$i,$media_name,$city_tier_dummy,$pid,$material_id,$final_score;
 #	printf "%-2d,%10s,%3d,%15d,%15d,%10d,%15.8f,%10d,%15.8f\n",$i,$media_name,$city_tier_dummy,$pid,$material_id,$final_score,$numer,$denom,$score;
     }
 }
