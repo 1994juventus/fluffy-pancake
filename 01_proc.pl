@@ -56,7 +56,7 @@ foreach $key (keys %winhash)
 {
     my $win=$winhash{$key};
     my $click=$clickhash{$key};
-    if ($win<impression_cutoff){
+    if ($win<$impression_cutoff){
 	$ctr=0;
     }
     else
