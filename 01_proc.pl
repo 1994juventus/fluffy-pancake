@@ -12,7 +12,7 @@ my $weight=10;
 
 my $impression_cutoff=1000;
 
-my @media=qw(vtq wax bitauto);
+my @media=qw(vtq wax bitauto ifeng sohu qingting youku netease letv youdao sax fun);
 
 my %winhash=();
 
